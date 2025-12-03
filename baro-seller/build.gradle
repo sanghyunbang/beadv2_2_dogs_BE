@@ -1,0 +1,14 @@
+// baro-seller 모듈 - seller, farm 서비스 포함
+dependencies {
+    implementation project(':baro-seller:seller-service')
+    implementation project(':baro-seller:farm-service')
+}
+
+bootJar {
+    enabled = true
+    mainClass = 'com.barofarm.seller.SellerServiceApplication'
+}
+
+jar {
+    enabled = false
+}

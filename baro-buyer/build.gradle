@@ -1,0 +1,15 @@
+// baro-buyer 모듈 - buyer, cart, product 서비스 포함
+dependencies {
+    implementation project(':baro-buyer:buyer-service')
+    implementation project(':baro-buyer:cart-service')
+    implementation project(':baro-buyer:product-service')
+}
+
+bootJar {
+    enabled = true
+    mainClass = 'com.barofarm.buyer.BuyerServiceApplication'
+}
+
+jar {
+    enabled = false
+}

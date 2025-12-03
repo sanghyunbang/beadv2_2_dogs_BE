@@ -1,0 +1,13 @@
+// baro-auth 모듈 - auth-service 포함
+dependencies {
+    implementation project(':baro-auth:auth-service')
+}
+
+bootJar {
+    enabled = true
+    mainClass = 'com.barofarm.auth.AuthServiceApplication'
+}
+
+jar {
+    enabled = false
+}

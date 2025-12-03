@@ -1,0 +1,14 @@
+// baro-order 모듈 - order, payment 서비스 포함
+dependencies {
+    implementation project(':baro-order:order-service')
+    implementation project(':baro-order:payment-service')
+}
+
+bootJar {
+    enabled = true
+    mainClass = 'com.barofarm.order.OrderServiceApplication'
+}
+
+jar {
+    enabled = false
+}

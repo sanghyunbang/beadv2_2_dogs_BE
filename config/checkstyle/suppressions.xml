@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+        "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+        "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+
+<suppressions>
+    <!-- 테스트 코드는 일부 규칙 완화 -->
+    <suppress checks="MethodLength" files=".*Test\.java"/>
+    <suppress checks="LineLength" files=".*Test\.java"/>
+
+    <!-- Application 클래스는 HideUtilityClassConstructor 제외 -->
+    <suppress checks="HideUtilityClassConstructor" files=".*Application\.java"/>
+
+    <!-- 설정 클래스는 일부 규칙 완화 -->
+    <suppress checks="HideUtilityClassConstructor" files=".*Config\.java"/>
+
+    <!-- 생성된 코드 제외 -->
+    <suppress files="[\\/]generated[\\/]" checks=".*"/>
+</suppressions>
+

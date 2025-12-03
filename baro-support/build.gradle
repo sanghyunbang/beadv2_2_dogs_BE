@@ -1,0 +1,18 @@
+// baro-support 모듈 - 지원 서비스들 포함
+dependencies {
+    implementation project(':baro-support:settlement-service')
+    implementation project(':baro-support:delivery-service')
+    implementation project(':baro-support:notification-service')
+    implementation project(':baro-support:experience-service')
+    implementation project(':baro-support:search-service')
+    implementation project(':baro-support:review-service')
+}
+
+bootJar {
+    enabled = true
+    mainClass = 'com.barofarm.settlement.SettlementServiceApplication'
+}
+
+jar {
+    enabled = false
+}
